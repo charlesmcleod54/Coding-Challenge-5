@@ -105,3 +105,12 @@ const applyDiscount = function(price, discount) {
     return discountedPrice;
 };
 applyDiscount(120, 25);
+
+// Task 10
+// Write an arrow
+const calculatePoints = (purchaseAmount) => {
+    const points = Math.floor(purchaseAmount /10);
+    console.log('For a purchase of $${purchaseAmount}, you earn ${points} loyalty points.');
+    return points;
+};
+calculatePoints(140);
