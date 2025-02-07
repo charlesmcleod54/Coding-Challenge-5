@@ -96,3 +96,12 @@ function calculateTax(amount, taxRate) {
     return tax;
 }
 calculateTax(100, 10);
+
+// Task 9
+// Declare a function applyDiscount
+const applyDiscount = function(price, discount) {
+    const discountedPrice = price - (price * (discount / 100));
+    console.log('The original price is $${price}. After a ${discount}% discount, the discounted price is $${discountedPrice.toFixed(2)}.');
+    return discountedPrice;
+};
+applyDiscount(120, 25);
