@@ -87,3 +87,12 @@ let foundcustomer = customers.find(customer => customer === "James");
 
 // Log the results to the console
 console.log(foundcustomer);
+
+// Task 8
+// Write a function calculateTax
+function calculateTax(amount, taxRate) {
+    const tax = amount * (taxRate / 100);
+    console.log('The tax for an amount of $${amount} at a rate of ${taxRate}% is $${tax.toFixed(2)}.');
+    return tax;
+}
+calculateTax(100, 10);
